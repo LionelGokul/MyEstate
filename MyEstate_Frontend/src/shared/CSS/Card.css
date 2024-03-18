@@ -1,0 +1,136 @@
+/* property card css */
+.property {
+  display: flex;
+  flex-direction: column;
+  background-color: #e93558;
+  align-self: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 6px 7px 1px #9c9999;
+  -moz-box-shadow: 5px 6px 7px 1px #9c9999;
+  box-shadow: 5px 6px 7px 1px #9c9999;
+}
+
+.prop_img {
+  max-height: 150px;
+  max-width: 300px;
+  min-width: 100px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  transition: transform 0.5s ease-out;
+  background: white;
+}
+
+.prop_img:hover {
+  transform: scale(1.03);
+}
+
+.property__address > p {
+  overflow: hidden;
+  max-width: 30ch;
+}
+
+.property__info {
+  height: 30px;
+  min-width: 100px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  color: white;
+  text-align: left;
+}
+
+.property__address {
+  white-space: pre;
+}
+
+.property__price {
+  text-align: left;
+}
+
+.property__rating {
+  text-align: left;
+}
+
+.wishlist_btn {
+  background-color: white;
+  border: 1px solid;
+  margin-top: 40px;
+  border-color: #bbcbd8 #bbcbd8 #bbcbd8;
+  color: #e93558;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.wishlist_btn :hover {
+  opacity: 1;
+}
+
+.property__address > .street {
+  line-height: 1em;
+  height: 3em; /* height is 2x line-height, so two lines will display */
+}
+
+.property__details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  flex-wrap: 3;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.propertylist {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+}
+
+/* .row {
+  margin: 50px 0;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px;
+  padding: 10px;
+  align-items: center;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.wishlist_icn {
+  width: 60%;
+  transition: transform 0.3s ease-out;
+}
+
+.wishlist_icn:hover {
+  transform: scale(1.15);
+}
+
+.wishlist_btn {
+  margin-left: 80% !important;
+}

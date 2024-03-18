@@ -1,0 +1,48 @@
+.social_login_img {
+  cursor: pointer;
+}
+
+.login_cover_img {
+  height: 300px;
+  width: 350px;
+}
+
+.horizontal_text {
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
+  line-height: 0.1em;
+  border-bottom: 1px solid #000;
+}
+
+.signup_form {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.social_login_btn {
+  border-radius: 10px;
+  height: 40px;
+  text-align: center;
+  width: 150px;
+  font-size: 0.7rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 700px) {
+  .login_cover_img {
+    height: 300px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .login_modal_img {
+    display: none;
+  }
+
+  .login_body {
+    background-image: url('/static/media/Login_cover.22d655b2.jpg');
+  }
+}
